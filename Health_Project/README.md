@@ -11,4 +11,4 @@ In this project, health data of a person recorded by a device was analyzed. Thes
 
 5. Implementing Machine Learning tools to develop models
 
-6. Selecting few Plotly graphs, make a dashboard, and deploying the web app on GCP (it can be found in https://github.com/Taraneh-K/Deploy_Dash_Project)
+6. Selecting few Plotly graphs, make a dashboard, and deploying the web app on GCP (it can be found in https://github.com/Taraneh-K/Lantern-Projects/tree/master/Deploy_Dash)
