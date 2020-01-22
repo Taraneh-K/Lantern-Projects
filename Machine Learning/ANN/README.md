@@ -1,5 +1,5 @@
 # Pima Indians Diabetes Analysis
-This dataset provides us with information of diabetes diagnosed or not based on the number of pregnany times, glucose, bp, skin', insulin, bmi, pedigree, age. 
+This dataset provides us with information of diabetes diagnosed or not based on the number of pregnany times, glucose, bp (blood pressure), skin (skin thickness), insulin, bmi, pedigree, age. 
 
 ## Analysis Outline:
 1. Data Exploration
