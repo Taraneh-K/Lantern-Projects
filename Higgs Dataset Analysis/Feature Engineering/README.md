@@ -73,7 +73,7 @@ Creates new feature columns for dataset based on selected aggregations and trans
     ----------
     df_new_features : dataframe containing the features and label
 
-## FeatureSelect Module
+## FeatureSelect Module:
 Inherits from FeatureEng module and selects features using combination of several methods. This module prepares and saves dataframe with selected features for the next steps of project. Following are the input parameters for this module:
 
     df_new_features : dataframe 
