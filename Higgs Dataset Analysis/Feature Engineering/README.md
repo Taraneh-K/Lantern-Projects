@@ -59,19 +59,19 @@ Creates new feature columns for dataset based on selected aggregations and trans
 
     new_features(self) : creates new features using current numeric features. Datafarme must only have numeric values.
     Returns
-----------
-feature_matrix : dataframe containing all the old feature and new synthetized features
+    ----------
+    feature_matrix : dataframe containing all the old feature and new synthetized features
 
-remove_correlated_features(self) : removes highly correlated features
-Returns
-----------
-feature_matrix : dataframe containing all the features that have correlation less than threshold value
+    remove_correlated_features(self) : removes highly correlated features
+    Returns
+    ----------
+    feature_matrix : dataframe containing all the features that have correlation less than threshold value
 
-df_with_new_features(self):
-adds the label(output) column to the dataframe with new features
-Returns
-----------
-df_new_features : dataframe containing the features and label
+    df_with_new_features(self):
+    adds the label(output) column to the dataframe with new features
+    Returns
+    ----------
+    df_new_features : dataframe containing the features and label
 
 ## FeatureSelect Module
 Inherits from FeatureEng module and selects features using combination of several methods. This module prepares and saves dataframe with selected features for the next steps of project. Following are the input parameters for this module:
@@ -83,47 +83,47 @@ Inherits from FeatureEng module and selects features using combination of severa
 	
 ### FeatureSelect Module Functions:
 
-cor_pearson_selector(self) : selects the top n=num_feats features using Pearson’s correlation between featurs and the target. 
-Returns
-----------
-cor_support : shows if a feature is selected or not. 1 for selected, and 0 for not selected
-cor_feature : list of selected features
+    cor_pearson_selector(self) : selects the top n=num_feats features using Pearson’s correlation between featurs and the target. 
+    Returns
+    ----------
+    cor_support : shows if a feature is selected or not. 1 for selected, and 0 for not selected
+    cor_feature : list of selected features
 
-chi_square_selector(self) : selects top n=num_feats features using Chi-Squared method.
-Returns
-----------
-chi_feature : list of selected features
+    chi_square_selector(self) : selects top n=num_feats features using Chi-Squared method.
+    Returns
+    ----------
+    chi_feature : list of selected features
 
-log_reg_selector(self) : selects top n=num_feats features using logistic regression method.
-Returns
-----------
-embeded_lr_feature : list of selected features
+    log_reg_selector(self) : selects top n=num_feats features using logistic regression method.
+    Returns
+    ----------
+    embeded_lr_feature : list of selected features
 
-random_forest_selector(self) : selects top n=num_feats features using Random Forest method.
-Returns
-----------
-embeded_rf_feature : list of selected features
+    random_forest_selector(self) : selects top n=num_feats features using Random Forest method.
+    Returns
+    ----------
+    embeded_rf_feature : list of selected features
 
-LGBM_selector(self) : selects top n=num_feats features using Light GBM method.
-Returns
-----------
-embeded_lgb_feature : list of selected features
+    LGBM_selector(self) : selects top n=num_feats features using Light GBM method.
+    Returns
+    ----------
+    embeded_lgb_feature : list of selected features
 
-Extra_Trees_selector(self) : selects top n=num_feats features using Extra Tree Classifier.
-Returns
-----------
-extra_trees_feature : list of selected features
+    Extra_Trees_selector(self) : selects top n=num_feats features using Extra Tree Classifier.
+    Returns
+    ----------
+    extra_trees_feature : list of selected features
 
-combine_selector(self) : selects top n=num_feats features using combinations of methods.
-Returns
-----------
-feature_selection_df.head(num_feats) : dataframe containing the top features with their 
-number of votes for each feature selection method.
+    combine_selector(self) : selects top n=num_feats features using combinations of methods.
+    Returns
+    ----------
+    feature_selection_df.head(num_feats) : dataframe containing the top features with their 
+    number of votes for each feature selection method.
 
-save_df_selected_columns(self) : saves final dataset with top n=num_feats selected features.
-Returns
-----------
-df_selected_columns : dataframe containing the top features and label to be used for next steps.
+    save_df_selected_columns(self) : saves final dataset with top n=num_feats selected features.
+    Returns
+    ----------
+    df_selected_columns : dataframe containing the top features and label to be used for next steps.
 
 
 
