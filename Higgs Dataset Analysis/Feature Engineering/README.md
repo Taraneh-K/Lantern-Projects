@@ -4,7 +4,7 @@ This package is developed to help Data Scientists to accelerate Feature Engineer
 This package consists of 2 modules (FeatureEng and FeatureSelect).
 
 ## FeatureEng module:
-Creates new feature columns for dataset based on selected aggregations and transformations. Following are the input parameters for this module:\r\n
+Creates new feature columns for dataset based on selected aggregations and transformations. Following are the input parameters for this module:
 
         filepath : str
             the location of dataset. The string could be a URL. 
