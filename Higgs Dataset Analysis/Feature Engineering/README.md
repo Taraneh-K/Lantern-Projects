@@ -42,23 +42,23 @@ Creates new feature columns for dataset based on selected aggregations and trans
 	    
 ### FeatureEng Module Functions:
 
-separate_features_from_label(self) : separates features from label column
-Returns
-----------
-label_df : dataframe containing only label(output) column
-label_col_name : column name of label column
-features : dataframe containing only features columns
+    separate_features_from_label(self) : separates features from label column
+    Returns
+    ----------
+    label_df : dataframe containing only label(output) column
+    label_col_name : column name of label column
+    features : dataframe containing only features columns
 
-numeric_features(self) : separates numeric features, from categorical features and label columns,
-and saves them into 3 separate dataframes.
-Returns
-----------
-cat_features : dataframe containing only categorical features columns
-numeric_features : dataframe containing only numerical features columns
-categorical_col_name : column name of categorical columns
+    numeric_features(self) : separates numeric features, from categorical features and label columns,
+    and saves them into 3 separate dataframes.
+    Returns
+    ----------
+    cat_features : dataframe containing only categorical features columns
+    numeric_features : dataframe containing only numerical features columns
+    categorical_col_name : column name of categorical columns
 
-new_features(self) : creates new features using current numeric features. Datafarme must only have numeric values.
-Returns
+    new_features(self) : creates new features using current numeric features. Datafarme must only have numeric values.
+    Returns
 ----------
 feature_matrix : dataframe containing all the old feature and new synthetized features
 
