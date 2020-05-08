@@ -1,6 +1,6 @@
 # Analysis Outline:
 
-In this project Corpus text file is analyzed. Preprocessing of text data involves transforming raw data into an understandable format for NLP models. 
+In this project Sentiment of a Corpus text file is analyzed. The sentiment of each sentence is either negative(label_1) or positive(label_2). Artificial Neural Networks(ANN) and Support Vector Machine(SVM) are fitted to dataset to predict the sentiment of each sentence. Prior to fitting the models, text data was preprocessed which involves transforming raw data into an understandable format for NLP models: 
 1. Data cleaning and changing all the text content to lower case.
 2. Tokenization to  break a stream of text into words, phrases, symbols, or other meaningful elements called tokens. The list of tokens becomes input for further processing.
 3. Word Lemmatization to reduce the inflectional forms of each word into a common base or root, as well as to remove Stop words.
