@@ -19,8 +19,13 @@ In this project, Higgs dataset is analyzed in several steps:
 # Contributors:
 
 This is a group project and following are the list of contibutors:
+
 Ahmed Al-Baz (https://github.com/albazahm)
+
 Birkamel Kaur
+
 Kshitij Mamgain (https://github.com/kshitijmamgain)
+
 Sasha Hajy Hassani (https://github.com/SHH116)
+
 Tanaby Zibamanzar Mofrad (https://github.com/tanabymofrad)
