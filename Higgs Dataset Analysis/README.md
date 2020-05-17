@@ -16,4 +16,11 @@ In this project, Higgs dataset is analyzed in several steps:
 5. Comparing of different fitted models and optimization methods against each other and AutoML of GCP.
 6. Comparing the results with AutoML of GCP.
 
+# Contributors:
 
+This is a group project and following are the list of contibutors:
+Ahmed Al-Baz (https://github.com/albazahm)
+Birkamel Kaur
+Kshitij Mamgain (https://github.com/kshitijmamgain)
+Sasha Hajy Hassani (https://github.com/SHH116)
+Tanaby Zibamanzar Mofrad (https://github.com/tanabymofrad)
