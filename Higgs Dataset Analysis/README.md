@@ -1,7 +1,9 @@
 # Project Introduction:
 
 Higgs dataset has been produced using Monte Carlo simulations at Physics & Astronomy, Univ. of California Irvine. The dataset can be found at (http://archive.ics.uci.edu/ml/datasets/HIGGS).
+
 It is a classification problem and identifies exotic particles in high-energy physics based on the sensors information(Signal process produces Higgs bosons(label 1) and a background process does not (label 0)).
+
 The first 21 features (columns 2-22) are kinematic properties measured by the particle detectors in the accelerator. The last seven features are functions of the first 21 features which are high-level features derived by physicists to help discriminate between the two classes. For this project, we ignore the last 7 columns and use Feature tools to create new features and compare with previous studies.
 
 # Project Outline:
