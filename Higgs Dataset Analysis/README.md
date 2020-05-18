@@ -22,7 +22,7 @@ This is a group project and following are the list of contibutors:
 
 Ahmed Al-Baz (https://github.com/albazahm)
 
-Birkamel Kaur
+Birkamel Kaur (https://github.com/Birkamal)
 
 Kshitij Mamgain (https://github.com/kshitijmamgain)
 
