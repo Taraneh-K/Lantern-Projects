@@ -14,7 +14,7 @@ In this project, Higgs dataset is analyzed in several steps:
 3. Fitting XGBoost, Catboost, and LightGBM models, and using Hyperopt and Optuna optimizers. 
 4. Unit testing and integration testing of all the developed libraries using pytest.
 5. Comparing of different fitted models and optimization methods against each other and AutoML of GCP.
-6. Comparing the results with AutoML of GCP.
+6. Comparing the results with previous papers.
 
 # Contributors:
 
