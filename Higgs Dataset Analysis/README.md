@@ -30,4 +30,4 @@ Sasha Hajy Hassani (https://github.com/SHH116)
 
 Taraneh Kordi (https://github.com/Taraneh-K)
 
-Tanaby Zibamanzar Mofrad (https://github.com/tanabymofrad)
+Supervisor: Tanaby Zibamanzar Mofrad (https://github.com/tanabymofrad)
