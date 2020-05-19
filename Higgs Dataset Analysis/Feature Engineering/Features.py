@@ -66,13 +66,13 @@ class FeatureEng():
         """
         if not isinstance(filepath, str):
             raise TypeError('Filepath must be a string')
-
-        if not isinstance(categorical_col_name, list):
-            raise TypeError(
+        if categorical_col_name != None:
+            if not isinstance(categorical_col_name, list):
+                raise TypeError(
         'categorical column names must be a list of strings')
 
-        if not all(isinstance(s, str) for s in categorical_col_name):
-            raise TypeError(
+            if not all(isinstance(s, str) for s in categorical_col_name):
+                raise TypeError(
         'categorical column names must be a list of strings')
 
         if not isinstance(label_col_name, str):
@@ -256,6 +256,8 @@ class FeatureSelect(FeatureEng):
     	processed dataframe from FeatureEng Parent class
     num_feats : int
     	number of features to be selected
+    row_num : int 
+        row number from where test data starts
 
     Returns
     ----------
@@ -265,16 +267,18 @@ class FeatureSelect(FeatureEng):
     feature_name : list containing name of features
     """
 
-    def __init__(self, df_new_features, num_features):
+    def __init__(self, df_new_features, num_features, row_num):
         
         if not isinstance(num_features, int):
             raise TypeError('number of features must be an integer')
 
         FeatureEng.df_new_features = df_new_features
+        self.df_train = self.df_new_features.iloc[:row_num,:]
+        self.df_test = self.df_new_features.iloc[row_num:,:]
         # independent columns
-        self.X = self.df_new_features.iloc[:, :-1]
+        self.X = self.df_train.iloc[:, :-1]
         # target column
-        self.y = self.df_new_features.iloc[:, -1]
+        self.y = self.df_train.iloc[:, -1]
         self.X_norm = MinMaxScaler().fit_transform(self.X)
         self.feature_name = self.X.columns.tolist()
         self.num_feats = num_features
@@ -453,8 +457,10 @@ class FeatureSelect(FeatureEng):
                     pass
                 i+= 1
 
-        self.df_selected_columns = self.df_new_features.drop(
+        self.df_selected_columns_train = self.df_train.drop(
             self.df_new_features.columns[self.col_num], axis=1, inplace=False)
-        self.df_selected_columns.to_csv('data_features_final.csv', index=False)
+        self.df_selected_columns_test = self.df_test.drop(
+            self.df_new_features.columns[self.col_num], axis=1, inplace=False)
+        self.df_selected_columns_train.to_csv('data_features_train.csv', index=False)
+        self.df_selected_columns_test.to_csv('data_features_test.csv', index=False)
 
-        return self.df_selected_columns
